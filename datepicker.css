@@ -1,0 +1,133 @@
+.datepicker,
+.datepicker * {
+  box-sizing: border-box;
+}
+
+.datepicker { position: relative; }
+
+.datepicker__modal {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 9999;
+  width: 280px;
+  background: #fff; 
+  font-size: 12px; 
+  color: #565a5c; 
+  display: inline-block; 
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  box-shadow: -1px 5px 4px 4px rgba(0,0,0,0.2);
+}
+
+.datepicker__modal:focus {
+  outline: none;
+}
+
+.datepicker__header {
+  width: 280px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.datepicker__header i {
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.datepicker__prev {
+  width: 35px;
+  display: inline-block;
+  float: left;
+  margin: 5px 0 0 3px;
+}
+
+.datepicker__prevYear {
+  float: left;
+  display: block;
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.datepicker__prevMonth {
+  float: left;
+  margin: 0 0 0 9px;
+  display: block;
+}
+
+.datepicker__monthYear {
+  width: 167px;
+  text-align: center;
+  font-size: 14px;
+  color: #565a5c;
+  font-weight: bold;
+  float: left; 
+  padding: 3px 0 0 0;
+}
+
+.datepicker__next {
+  width: 35px;
+  display: inline-block;
+  float: right;
+  margin: 5px 0 0 0;
+}
+
+.datepicker__nextYear {
+  float: left;
+  display: block;
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.datepicker__nextMonth {
+  float: left;
+  margin: 0 9px 0 0;
+}
+
+.datepicker__names {
+  width: 280px;
+  border-bottom: 1px solid #c4c4c4;
+  display: inline-block;
+}
+
+.datepicker__names > span {
+  width: 40px;
+  text-align: center;
+  color: #82888a;
+  float: left;
+  display: block;
+}
+
+.datepicker__cells {
+  width: 280px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.datepicker__cell {
+  width: 40px;
+  height: 40px;
+  float: left;
+  display: block;
+  color: #565a5c;
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.datepicker__cell.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.datepicker__cell:hover {
+  background: #444;
+  color: #fff;
+}
