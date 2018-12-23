@@ -3,9 +3,9 @@
 
   angular
     .module('datepickerModule', [])
-    .directive('datepicker', ['$timeout', '$filter', Datepicker]);
+    .directive('datepicker', ['$timeout', Datepicker]);
 
-  function Datepicker($timeout, $filter) {
+  function Datepicker($timeout) {
     var DatepickerTemplate =
       '<div class="datepicker" id="datepicker_{{$id}}">' +
         '<div ng-transclude></div>' +
